@@ -52,13 +52,40 @@ header{
 
 .user-container{
     background-color: tomato;
-    height: 100%;
+    height: 50px;
     width: 210px;
 }
 
 main{
     grid-area: main;
     background-color: lightyellow;
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "cards cards"
+        "graphic posts";
+    grid-template-rows: 70px 1fr 2fr;
+    grid-template-columns: 1fr 400px;
+}
+
+.title-container{
+    grid-area: title;
+    background-color: violet;
+}
+
+.cards-container{
+    grid-area: cards;
+    background-color: yellowgreen;
+}
+
+.graphic-container{
+    grid-area: graphic;
+    background-color: teal;
+}
+
+.posts-container{
+    grid-area: posts;
+    background-color: blue;
 }
 
 footer{
