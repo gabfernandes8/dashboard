@@ -1,0 +1,67 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "nav header" 
+        "nav main"
+        "nav footer";
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    padding: 40px;
+}
+
+nav{
+    grid-area: nav;
+    display: grid;
+    padding-right: 40px;
+}
+
+.menu-container{
+    background-color: tomato;
+    border-radius: 32px;
+    display: grid;
+    grid-template-rows: 180px 1fr 180px;
+    overflow: hidden;
+}
+
+.icon{
+    background-color: blue;
+}
+
+.menu{
+    background-color: blueviolet;
+}
+
+.guide{
+    background-color: brown;
+}
+
+header{
+    grid-area: header;
+    background-color: yellow;
+    display: grid;
+    place-items: end;
+}
+
+.user-container{
+    background-color: tomato;
+    height: 100%;
+    width: 210px;
+}
+
+main{
+    grid-area: main;
+    background-color: lightyellow;
+}
+
+footer{
+    grid-area: footer;
+    background-color: skyblue;
+}
